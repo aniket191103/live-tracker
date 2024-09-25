@@ -45,6 +45,7 @@ socket.on("recieve-location", (data) => {
         markers[id] = L.marker([latitude, longitude]).addTo(map);
     }
 
+    // Don't change the map view based on other users
     // Optionally, you may set the view to the latest user location, but
     // it might be better to keep the user's location centered
     // Uncomment the following line if you want to center the map on any user's location
